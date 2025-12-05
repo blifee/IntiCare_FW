@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 
 // Import images
-import Logo from "../images/logo.png";
+import Logo from "../images/Logo.png";
 import FbIcon from "../images/fb.png";
 import TwIcon from "../images/tw.png";
 import LiIcon from "../images/li.png";
