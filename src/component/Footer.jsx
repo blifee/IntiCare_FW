@@ -1,6 +1,17 @@
 import React from "react";
 import "./Footer.css";
 
+// Import images
+import Logo from "../images/logo.png";
+import FbIcon from "../images/fb.png";
+import TwIcon from "../images/tw.png";
+import LiIcon from "../images/li.png";
+import InIcon from "../images/in.png";
+import MailIcon from "../images/mail.png";
+import PhoneIcon from "../images/phone.png";
+import HelpIcon from "../images/help.png";
+import ChromeBtn from "../images/Link.png";
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -8,17 +19,17 @@ export default function Footer() {
 
         {/* LEFT SECTION */}
         <div className="footer-left">
-          <img src="\src\images\logo.png" alt="LeadCRM Logo" className="footer-logo" />
+          <img src={Logo} alt="LeadCRM Logo" className="footer-logo" />
 
           <p className="footer-text">
             LeadCRM is LinkedIn integration tool for your CRM.
           </p>
 
           <div className="footer-socials">
-            <img src="src\images\fb.png" alt="" />
-            <img src="\src\images\tw.png" alt="" />
-            <img src="\src\images\li.png" alt="" />
-            <img src="\src\images\in.png" alt="" />
+            <img src={FbIcon} alt="Facebook" />
+            <img src={TwIcon} alt="Twitter" />
+            <img src={LiIcon} alt="LinkedIn" />
+            <img src={InIcon} alt="Instagram" />
           </div>
         </div>
 
@@ -55,24 +66,24 @@ export default function Footer() {
           <h4>Contact Us</h4>
 
           <p className="contact-item">
-            <img src="\src\images\mail.png" alt="" className="contact-icon" />
+            <img src={MailIcon} alt="Mail" className="contact-icon" />
             support@leadcrm.io
           </p>
 
           <p className="contact-item">
-            <img src="\src\images\phone.png" alt="" className="contact-icon" />
+            <img src={PhoneIcon} alt="Phone" className="contact-icon" />
             +1 231-538-7466
           </p>
 
           <p className="contact-item">
-            <img src="\src\images\help.png" alt="" className="contact-icon" />
+            <img src={HelpIcon} alt="Help" className="contact-icon" />
             Help Center
           </p>
 
           <img
-            src="src\images\Link.png"
+            src={ChromeBtn}
             alt="Chrome"
-            className="chrome-btn"
+            className="chrome-btn2"
           />
         </div>
       </div>
