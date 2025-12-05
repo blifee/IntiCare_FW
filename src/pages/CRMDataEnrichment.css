@@ -90,7 +90,6 @@ body,html{margin:0;padding:0;background:var(--bg);font-family:-apple-system,Blin
   margin-top:8px;
   width:100%;
   align-items:start;
-  
 }
 
 /* panel base */
@@ -127,8 +126,7 @@ body,html{margin:0;padding:0;background:var(--bg);font-family:-apple-system,Blin
 .profile-img{ width:80px; height:80px; border-radius:50%; object-fit:cover; }
 .verification-badges{ display:flex; gap:12px; margin-left:auto; }
 .badge{ width:48px; height:48px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
-.badge img{ height: 101px;
-    width: 96px; }
+.badge img{ width:28px; height:auto; }
 .contact-name{ font-size:18px; margin-top:12px; margin-bottom:12px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; }
 .info-block{ margin-bottom:10px; }
 .info-row{ display:flex; gap:8px; align-items:center; }

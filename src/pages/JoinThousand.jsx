@@ -16,18 +16,9 @@ import Img444 from "../images/444.png";
 import Img55 from "../images/55.png";
 import Img555 from "../images/555.png";
 
-import BgPattern from "../images/bg-pattern.png";
-
 export default function JoinThousand() {
   return (
-    <div
-      className="hero-wrapper"
-      style={{
-        backgroundImage: `url(${BgPattern})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <div className="hero-wrapper">
       <h2 className="hero-heading">
         Join Thousands of Professionals Using LeadCRM
       </h2>
@@ -39,35 +30,45 @@ export default function JoinThousand() {
 
         {/* Badge Row */}
         <div className="hero-badges">
-          {[Salf, Hub, Pip, Rati2, Rati1].map((img, index) => (
-            <span key={index} className="badge">
-              <img src={img} alt="" />
-            </span>
-          ))}
+          <span className="badge">
+            <img src={Salf} alt="Salf" />
+          </span>
+          <span className="badge">
+            <img src={Hub} alt="HubSpot" />
+          </span>
+          <span className="badge">
+            <img src={Pip} alt="Pipedrive" />
+          </span>
+          <span className="badge">
+            <img src={Rati2} alt="Rating 2" />
+          </span>
+          <span className="badge">
+            <img src={Rati1} alt="Rating 1" />
+          </span>
         </div>
 
         {/* Cards Preview Section */}
         <div className="hero-cards">
           <div className="card-box">
-            <img src={Img1a} alt="" />
+            <img src={Img1a} alt="Card 1" />
           </div>
 
           <div className="card-box">
-            <img src={Img2a} alt="" />
+            <img src={Img2a} alt="Card 2" />
           </div>
 
           <div className="card-box">
-            <img src={Img3a} alt="" />
+            <img src={Img3a} alt="Card 3" />
           </div>
 
           <div className="card-box multiple">
-            <img src={Img44} alt="" />
-            <img src={Img444} alt="" />
+            <img src={Img44} alt="Card 44" />
+            <img src={Img444} alt="Card 444" />
           </div>
 
           <div className="card-box multiple">
-            <img src={Img55} alt="" />
-            <img src={Img555} alt="" />
+            <img src={Img55} alt="Card 55" />
+            <img src={Img555} alt="Card 555" />
           </div>
         </div>
       </div>
