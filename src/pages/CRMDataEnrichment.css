@@ -1,0 +1,322 @@
+/* ---------------------------
+   CRM Data Enrichment Styles
+   Replace your CRMDataEnrichment.css
+   --------------------------- */
+
+/* ---------- ROOT / GLOBAL ---------- */
+:root{
+  --bg:#f8f9fb;
+  --panel-bg:#f0f4ff;
+  --muted:#888;
+  --accent:#0b3f7f;
+  --green:#00b894;
+  --danger:#d9534f;
+  --card-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --radius:12px;
+  --gap:20px;
+  --max-content-width:1200px;
+}
+
+*{box-sizing:border-box}
+body,html{margin:0;padding:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#222}
+.crm-container{
+  padding:32px;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  align-items:center;
+}
+
+/* constrain content width */
+.crm-container > * { width:100%; max-width:var(--max-content-width); }
+
+/* HEADINGS */
+.heading{
+  color:#090F4E;
+  font-weight:600;
+  text-align:center;
+  font-size:26px;
+  margin:0;
+}
+.h2{
+  margin:8px 0 0 0;
+  text-align:center;
+  line-height:1.4;
+  color:#4a4a4a;
+  font-size:15px;
+}
+
+/* ---------- TABS ---------- */
+.tabs-container{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin:18px 0;
+  border-bottom:2px solid #eee;
+  padding-bottom:12px;
+  overflow:hidden;
+}
+.tab-btn{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 18px;
+  background:transparent;
+  border:none;
+  border-bottom:3px solid transparent;
+  border-radius:6px 6px 0 0;
+  cursor:pointer;
+  font-size:15px;
+  color:#333;
+  transition:all .18s ease;
+}
+.tab-btn .tab-label{ margin-left:6px; }
+.tab-btn:hover{ transform:translateY(-1px); }
+.tab-btn.active{
+  border-bottom-color:var(--accent);
+  color:var(--accent);
+  font-weight:700;
+}
+
+/* ---------- PROBLEM / BADGE ---------- */
+.problem-text{ font-size:16px;color:#444;margin:18px 0; display:flex; flex-wrap:wrap; align-items:center; gap:12px; justify-content:center; }
+.incomplete-badge{
+  background:#ffe6e6;color:var(--danger);
+  padding:4px 10px;border-radius:18px;font-size:12px;
+}
+
+/* ---------- MAIN GRID ---------- */
+.main-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:28px;
+  margin-top:8px;
+  width:100%;
+  align-items:start;
+}
+
+/* panel base */
+.panel{
+  background:var(--panel-bg);
+  border-radius:var(--radius);
+  padding:24px;
+  min-height:420px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02) inset;
+}
+
+/* panel titles & links */
+.panel-title{ margin:0 0 8px 0; font-size:18px; color:#0b0f40; }
+.panel-link{
+  color:var(--green); text-decoration:none; font-weight:600; display:inline-block; margin-bottom:18px;
+}
+
+/* ---------- LEFT CARDS ROW ---------- */
+.left-cards-row{ display:flex; gap:var(--gap); align-items:flex-start; justify-content:flex-start; flex-wrap:wrap; }
+
+/* CONTACT CARD */
+.contact-card{
+  background:#fff;
+  width:311px;
+  padding:18px;
+  border-radius:12px;
+  box-shadow:var(--card-shadow);
+  display:flex;
+  flex-direction:column;
+}
+.card-top{ background-color:0b3f7f flex; gap:8px; align-items:center; justify-content:center; }
+.card-top-text{ margin-left:6px; font-weight:600; color:#333; }
+.contact-header{ display:flex; gap:16px; align-items:center; margin-top:12px; width:100%; }
+.profile-img{ width:80px; height:80px; border-radius:50%; object-fit:cover; }
+.verification-badges{ display:flex; gap:12px; margin-left:auto; }
+.badge{ width:48px; height:48px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
+.badge img{ width:28px; height:auto; }
+.contact-name{ font-size:18px; margin-top:12px; margin-bottom:12px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; }
+.info-block{ margin-bottom:10px; }
+.info-row{ display:flex; gap:8px; align-items:center; }
+.info-text{ font-weight:600; color:#222; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.info-source{ font-size:12px; color:var(--muted); margin-left:32px; margin-top:4px; }
+.contacts-found-btn{
+  margin-top:10px;width:100%;padding:12px;background:#111;color:#fff;border:none;border-radius:8px;cursor:pointer;font-weight:700;display:flex;align-items:center;justify-content:center;gap:8px;
+}
+
+/* FILTER CARD */
+.filters-card{ background:#fff; height:345px; width:256px; padding:16px; border-radius:12px; box-shadow:var(--card-shadow); display:flex;flex-direction:column; }
+.filter-header{ display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+.filters-example{ max-width:200px; width:100%; margin-top:8px; object-fit:cover; }
+
+/* ---------- WATERFALL (RIGHT) ---------- */
+.waterfall-stepped{ display:flex; flex-direction:column; gap:10px; position:relative; }
+.waterfall-step{ position:relative; }
+
+.vendor-label-new{ font-size:15px; font-weight:600; color:#555; margin-bottom:8px; }
+
+/* vendor card — keep fixed width for desktop */
+.vendor-card-new{
+  background:#fff;border-radius:12px;padding:14px 18px;width:346px;box-shadow:var(--card-shadow);display:flex;justify-content:space-between;align-items:center;
+}
+.vendor-left{ display:flex; gap:12px; align-items:center; min-width:0; }
+.vendor-logo-img-new{ width:40px; height:22px; padding:6px; border-radius:10px; background:#f8f9fb; object-fit:contain; }
+.vendor-name-new{ font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:180px; }
+
+.vendor-status-new{ display:flex; gap:8px; color:var(--danger); align-items:center; font-weight:600; }
+.vendor-icons{ display:flex; gap:8px; align-items:center; color:var(--green); }
+
+/* arrow between vendors */
+.vendor-arrow-new{ width:12px; height:28px; margin-top:8px; display:block; }
+
+/* ---------- TAB CONTENT BOX (other tabs) ---------- */
+.tab-content-box{ margin-top:8px; padding:18px; border-radius:12px; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04); }
+
+/* small demo/grid cards */
+.sync-grid,.export-grid,.ai-grid{ display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:18px; }
+.sync-card,.export-card,.ai-card{ background:#fffbf0;padding:18px;border-radius:12px; }
+.mock-image{ height:150px;background:linear-gradient(180deg,#fff,#f3f7ff);border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);display:flex;align-items:center;justify-content:center;color:#666;margin-top:12px; }
+.mock-image.wide{ height:210px; }
+.sync-demo{ display:flex; align-items:center; gap:14px; margin-top:12px; }
+.sync-left-demo,.sync-right-demo{ flex:1; }
+.circle-sync{ width:48px;height:48px;border-radius:50%;background:#e6f7f2;display:flex;align-items:center;justify-content:center;font-weight:700; }
+
+/* tiny helpers */
+.muted{ color:var(--muted); font-size:14px; }
+
+/* ---------- RESPONSIVE RULES ---------- */
+
+/* Large tablets and below: stack panels and make cards fluid */
+@media (max-width: 1024px) {
+  .crm-container{ padding:20px; }
+  .main-grid{ grid-template-columns: 1fr; gap:22px; }
+  .panel{ padding:20px; min-height:auto; }
+  .left-cards-row{ flex-direction:column; align-items:center; }
+  .contact-card, .filters-card{ width:100%; max-width:360px; }
+  .vendor-card-new{ width:100%; }
+  .sync-grid,.export-grid,.ai-grid{ grid-template-columns:1fr; }
+}
+
+/* Tablet: make tabs scrollable and center contents */
+@media (max-width: 768px) {
+  .tabs-container{ overflow-x:auto; white-space:nowrap; padding-bottom:10px; -webkit-overflow-scrolling:touch; }
+  .tab-btn{ flex:0 0 auto; font-size:14px; padding:8px 14px; }
+  .heading{ font-size:22px; }
+  .h2{ font-size:14px; }
+  .panel-title{ text-align:center; }
+  .panel-link{ display:block; text-align:center; }
+
+  /* RESET inline marginLeft used in JSX (important) */
+  .vendor-label-new,
+  .vendor-card-new,
+  .vendor-arrow-new {
+    margin-left: 0 !important;
+  }
+
+  /* waterfall: compact vertical cards */
+  .waterfall-stepped{ gap:14px; }
+  .vendor-card-new{ padding:12px; display:flex; flex-direction:row; align-items:center; justify-content:space-between; }
+  .vendor-name-new{ max-width:140px; }
+}
+
+/* Mobile phones: compact everything */
+@media (max-width: 480px) {
+  .crm-container{ padding:14px; }
+  .heading{ font-size:20px; line-height:1.15; }
+  .h2{ margin-top:6px !important; font-size:13px; line-height:1.25; }
+  .tab-btn{ font-size:13px; padding:8px 12px; }
+  .contact-card{ padding:14px; width:100%; }
+  .profile-img{ width:62px; height:62px; }
+  .filters-card{ height:auto; padding:14px; width:100%; max-width:360px; }
+
+  .vendor-card-new{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+    padding:12px;
+    width:100%;
+  }
+  .vendor-left{ gap:8px; }
+  .vendor-name-new{ max-width:100%; white-space:normal; }
+  .vendor-arrow-new{ display:none; }
+
+  /* ensure inline styles cannot push items off-screen */
+  .vendor-label-new, .vendor-card-new, .vendor-arrow-new { margin-left:0 !important; }
+}
+
+/* Accessibility / focus */
+.tab-btn:focus{ outline:3px solid rgba(11,63,127,0.12); outline-offset:2px; border-radius:6px; }
+
+/* small polish */
+@media (prefers-reduced-motion: reduce) {
+  *{ transition:none !important; animation:none !important; }
+}
+/* // */
+/* FIRST CARD TWO BOXES SIDE-BY-SIDE */
+.first-card-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.first-card-box {
+  flex: 1;
+}
+/* // */
+/* nex */
+/* ROW WRAPPER TO KEEP BOTH CARDS SIDE BY SIDE */
+.cards-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Make both cards equal width */
+.contact-card,
+.filters-card {
+  flex: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .cards-row {
+    flex-direction: column;   /* stacked on mobile */
+    gap: 20px;
+  }
+
+  .contact-card,
+  .filters-card {
+    width: 100%;
+  }
+}
+/* Layout fix */
+.panel {
+  background: #f5f9ff;
+  padding: 25px;
+  border-radius: 16px;
+  width: 100%;
+}
+
+.panel-left {
+  flex: 1;
+}
+
+/* Make both cards align side-by-side */
+.left-cards-row {
+  display: flex;
+  gap: 22px;
+}
+
+.contact-card,
+.filters-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 22px;
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .left-cards-row {
+    flex-direction: column;
+  }
+}

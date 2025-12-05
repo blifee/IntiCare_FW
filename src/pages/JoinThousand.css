@@ -1,0 +1,113 @@
+.hero-wrapper {
+  text-align: center;
+  padding: 60px 0;
+  background: #e9f0ff;
+}
+
+/* Heading */
+.hero-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-right: 200px;
+}
+
+/* Blue container */
+.hero-box {
+  width: 88%;
+  margin: auto;
+  padding: 50px;
+  border-radius: 22px;
+  background: #065D7D;
+  color: white;
+
+  background-image: url('/src/images/bg-pattern.png'); /* OPTIONAL */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Main title inside blue box */
+.hero-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Badge row */
+.hero-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  border-radius: 50px;
+}
+
+.badge {
+  background: white;
+  padding: 8px 20px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.badge img {
+  height: 19px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+/* Cards layout */
+.hero-cards {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 25px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.card-box {
+  width: 255px;
+  background: white;
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  height: 160px;
+  overflow: hidden;
+}
+
+.card-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* For double stacked images */
+.multiple {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* CTA Button */
+.hero-btn {
+  margin-top: 30px;
+  padding: 14px 32px;
+  font-size: 18px;
+  background: #9bff5b;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  color: black;
+}
+
+.hero-btn:hover {
+  background: #86f548;
+}

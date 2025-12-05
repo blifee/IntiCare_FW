@@ -1,0 +1,189 @@
+.supported-section {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.supported-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0b1b4d;
+}
+
+.supported-sub {
+  color: #555;
+  max-width: 700px;
+  margin: 10px auto 40px;
+  line-height: 1.5;
+}
+
+/* Main container */
+.supported-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+
+/* LEFT SIDE */
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* border: 1px solid #91E1FF; */
+}
+
+.left-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  flex-direction: column;
+  
+  /* border: 2px solid #91E1FF; */
+  /* border-radius: 100px; */
+}
+
+.left-icon img {
+  width: 55px;
+  height: 55px;
+  border: 2px solid #91e1ff;
+  border-radius: 50px;
+  padding: 25px;
+}
+
+.left-info {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0b1b4d;
+}
+
+.linkedin-icon {
+  background: #0077b5;
+  color: white;
+  padding: 1px 4px;
+  border-radius: 4px;
+  margin-right: 6px;
+  font-size: 10px;
+}
+
+/* TAGS LEFT */
+.left-tags {
+  position: absolute;
+  left: 180px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  padding: 5px 12px;
+  border-radius: 12px;
+  background: #e8f4ff;
+  color: #0077b5;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* CENTER LOGO */
+.center-logo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+/* RIGHT FLOW */
+.right-flow {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  
+}
+
+.green-tag,
+.blue-tag,
+.orange-tag,
+.red-tag {
+  padding: 6px 14px;
+  border-radius: 14px;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.green-tag {
+  background: #e3f7e6;
+  color: #1e9d4c;
+}
+.blue-tag {
+  background: #e6f2ff;
+  color: #0077ff;
+}
+.orange-tag {
+  background: #ffe9d9;
+  color: #ff7f32;
+}
+.red-tag {
+  background: #ffe3e3;
+  color: #d9534f;
+}
+
+/* CRM LOGO COLUMN */
+.crm-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px 30px;
+  background: #ecf2ff;
+  border-radius: 40px;
+  width: 128px;
+  height: 542px;
+  top: 5035px;
+  left: 1273px;
+  border-radius: 26px;
+  padding: 14px;
+  gap: 30px;
+}
+
+.crm-box {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.crm-box img {
+  width: 40px;
+}
+
+/* BUTTON */
+.integrate-btn {
+  margin-top: 40px;
+  background: #b6ff6a;
+  border: none;
+  padding: 14px 30px;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+/* /////////////// */
+.image-container {
+  width: 100%;           /* or a fixed width like 400px, depending on your layout */
+  max-width: 1500px;      /* optional max width */
+  height: 590px;         /* fixed height */
+  overflow: hidden;      /* hide any image parts going outside */
+}
+
+.fixed-image {
+  width: 100%;           /* stretch image to full container width */
+  height: 100%;          /* stretch image to full container height */
+  object-fit: cover;     /* ensures image fills container, maintains aspect ratio, crops if needed */  /* :contentReference[oaicite:0]{index=0} */
+  object-position: center;  /* center the image content when cropping happens */  /* :contentReference[oaicite:1]{index=1} */
+  display: block;        /* optional — avoids inline spacing / whitespace issues for <img> */  
+}

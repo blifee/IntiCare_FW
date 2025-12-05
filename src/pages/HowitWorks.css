@@ -1,0 +1,221 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+/* Wrapper */
+.how-wrapper {
+  position: relative;
+  padding: 120px 20px 80px 20px;
+  text-align: center;
+}
+
+/* Background Image */
+.how-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1500px;      
+  height: 843px;      
+  background-image: url("../images/BBBB.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  z-index: 0;
+}
+
+/* Make content appear above image */
+.steps-grid,
+.how-title,
+.how-sub,
+.cta-btn {
+  position: relative;
+  z-index: 2;
+}
+
+/* Title */
+.how-title {
+  font-size: 38px;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* Subtitle */
+.how-sub {
+  font-size: 18px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* Grid Layout */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* Step Card */
+.step-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 18px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.step-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.12);
+  border: 2px solid #2D96BC;
+}
+
+/* Step Number – APPLY SRIRACHA ONLY HERE */
+.step-number {
+  font-family: 'Sriracha', cursive;
+  font-size: 55px;
+  color: #2D96BC;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/* Step Title */
+.step-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Step Text */
+.step-text {
+  font-size: 15px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Step Image */
+.step-img {
+  width: 100%;
+  margin-top: 15px;
+  object-fit: contain;
+}
+
+/* CTA Button */
+.cta-btn {
+  background: #2D96BC;
+  color: white;
+  padding: 14px 34px;
+  border-radius: 30px;
+  margin-top: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #247aa3;
+}
+
+/* Responsive Styles */
+
+/* Desktop -> Tablet */
+@media (max-width: 1200px) {
+  .steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .how-wrapper::before {
+    width: 1000px;
+    height: 600px;
+  }
+}
+
+/* Tablet -> Small Tablet */
+@media (max-width: 900px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .how-title { font-size: 32px; }
+  .how-sub { font-size: 16px; }
+  .step-number { font-size: 45px; }
+  .step-title { font-size: 18px; }
+
+  .how-wrapper::before {
+    width: 700px;
+    height: 420px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .how-wrapper {
+    padding: 80px 15px 50px 15px;
+  }
+
+  .how-title { font-size: 28px; }
+  .how-sub { font-size: 14px; }
+  .step-number { font-size: 38px; }
+  .step-title { font-size: 16px; }
+  .step-text { font-size: 14px; }
+
+  .cta-btn {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+
+  .how-wrapper::before {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+.how-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 100px;  /* change this value to move background down */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1500px;      
+  height: 843px;      
+  background-image: url("../images/BBBB.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  z-index: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .how-wrapper::before {
+    top: 80px;
+    width: 1000px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 900px) {
+  .how-wrapper::before {
+    top: 60px;
+    width: 700px;
+    height: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  .how-wrapper::before {
+    display: none; /* background removed on mobile */
+  }
+}
