@@ -1,5 +1,8 @@
 import React from "react";
-import "../pages/SupportedLeadCRM.css";
+import "./SupportedLeadCRM.css";
+
+// IMPORT IMAGE
+import LdcrmImg from "../images/ldcrm.png";
 
 export default function SupportedLeadCRM() {
   return (
@@ -12,12 +15,10 @@ export default function SupportedLeadCRM() {
         LinkedIn prospecting. We don't want you to miss any revenue opportunity on the internet!
       </p>
 
-      <div class="image-container">
-  <img src="\src\images\ldcrm.png" alt="Example image" class="fixed-image" />
-</div>
+      <div className="image-container">
+        <img src={LdcrmImg} alt="Example image" className="fixed-image" />
+      </div>
 
-        
-    
       {/* Button */}
       <button className="integrate-btn">Lets Integrate your CRM Now!</button>
     </section>
