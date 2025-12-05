@@ -6,7 +6,7 @@ import Step1Img from "../images/Private/11.png";
 import Step2Img from "../images/Private/22.png";
 import Step3Img from "../images/Private/33.png";
 import Step4Img from "../images/Private/44.png";
-import BackgroundImg from "../images/BBBB.png"; // for background if needed
+import BackgroundImg from "../images/BBBB.png"; // for background 
 
 export default function HowItWork() {
   const steps = [

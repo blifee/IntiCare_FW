@@ -185,7 +185,7 @@
 .how-wrapper::before {
   content: "";
   position: absolute;
-  top: 100px;  /* change this value to move background down */
+  top: 100px;  
   left: 50%;
   transform: translateX(-50%);
   width: 1500px;      
@@ -216,6 +216,6 @@
 
 @media (max-width: 600px) {
   .how-wrapper::before {
-    display: none; /* background removed on mobile */
+    display: none; 
   }
 }

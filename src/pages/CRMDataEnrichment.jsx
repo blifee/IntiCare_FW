@@ -48,7 +48,9 @@ export default function CRMDataEnrichment() {
   return (
     <div className="crm-container">
       <h2 className="heading">Complete LinkedIn Sales Solutions</h2>
-      <p className="h2">Everything you need for professional LinkedIn prospecting</p>
+      <p className="h2">
+        Everything you need for professional LinkedIn prospecting
+      </p>
       {/* Tabs */}
       <div className="tabs-container">
         {tabs.map((tab) => {
@@ -76,80 +78,87 @@ export default function CRMDataEnrichment() {
           <div className="main-grid">
             {/* LEFT PANEL */}
             <div className="panel panel-left">
-              <h2 className="panel-title">Here is how LeadCRM tackles that situation.</h2>
+              <h2 className="panel-title">
+                Here is how LeadCRM tackles that situation.
+              </h2>
 
               <a href="#" className="panel-link">
                 Try LeadCRM Data Enrichment →
               </a>
 
+              <h3 className="section-title">Verified Email & Phone</h3>
 
-  <h3 className="section-title">Verified Email & Phone</h3>
+              <div className="left-cards-row">
+                {/* CONTACT CARD */}
+                <div className="contact-card">
+                  <div className="card-top">
+                    <Mail size={20} color="#4a90e2" />
+                    <span className="card-top-text">
+                      Verified Email & Phone
+                    </span>
+                  </div>
 
-  <div className="left-cards-row">
+                  <div className="contact-header">
+                    <img
+                      src={profileImg}
+                      className="profile-img"
+                      alt="profile"
+                    />
+                    <div className="verification-badges">
+                      <div className="badge badge-valid">
+                        <img src={validImg} alt="valid" />
+                      </div>
+                      <div className="badge badge-zb">
+                        <img src={zzbImg} alt="zzb" />
+                      </div>
+                    </div>
+                  </div>
 
-    {/* CONTACT CARD */}
-    <div className="contact-card">
-      <div className="card-top">
-        <Mail size={20} color="#4a90e2" />
-        <span className="card-top-text">Verified Email & Phone</span>
-      </div>
+                  <h3 className="contact-name">David Steinhoff</h3>
 
-      <div className="contact-header">
-        <img src={profileImg} className="profile-img" alt="profile" />
-        <div className="verification-badges">
-          <div className="badge badge-valid">
-            <img src={validImg} alt="valid" />
-          </div>
-          <div className="badge badge-zb">
-            <img src={zzbImg} alt="zzb" />
-          </div>
-        </div>
-      </div>
+                  <div className="info-block">
+                    <div className="info-row">
+                      <Mail size={16} />
+                      <span className="info-text">
+                        davidsteinhoff@gmail.com
+                      </span>
+                      <CheckCircle size={16} color="#00b894" />
+                    </div>
+                    <p className="info-source">Found via snov.io ⚙</p>
+                  </div>
 
-      <h3 className="contact-name">David Steinhoff</h3>
+                  <div className="info-block">
+                    <div className="info-row">
+                      <Phone size={16} />
+                      <span className="info-text">+1 932 xxx xxx</span>
+                      <CheckCircle size={16} color="#00b894" />
+                    </div>
+                    <p className="info-source">Found via snov.io ⚙</p>
+                  </div>
 
-      <div className="info-block">
-        <div className="info-row">
-          <Mail size={16} />
-          <span className="info-text">davidsteinhoff@gmail.com</span>
-          <CheckCircle size={16} color="#00b894" />
-        </div>
-        <p className="info-source">Found via snov.io ⚙</p>
-      </div>
+                  <button className="contacts-found-btn">
+                    <CheckCircle size={18} /> Contacts Found
+                  </button>
+                </div>
 
-      <div className="info-block">
-        <div className="info-row">
-          <Phone size={16} />
-          <span className="info-text">+1 932 xxx xxx</span>
-          <CheckCircle size={16} color="#00b894" />
-        </div>
-        <p className="info-source">Found via snov.io ⚙</p>
-      </div>
+                {/* FILTER CARD */}
+                <div className="filters-card">
+                  <div className="filter-header">
+                    <img src={frameImg} width="28" alt="frame" />
+                    <span className="filter-title">40+ Search Filters</span>
+                  </div>
 
-      <button className="contacts-found-btn">
-        <CheckCircle size={18} /> Contacts Found
-      </button>
-    </div>
-
-    {/* FILTER CARD */}
-    <div className="filters-card">
-      <div className="filter-header">
-        <img src={frameImg} width="28" alt="frame" />
-        <span className="filter-title">40+ Search Filters</span>
-      </div>
-
-      <img src={hdImg} alt="example" className="filters-example" />
-    </div>
-
-  </div>
-</div>
-
-
-
+                  <img src={hdImg} alt="example" className="filters-example" />
+                </div>
+              </div>
+            </div>
 
             {/* RIGHT PANEL – WATERFALL */}
             <div className="panel panel-right">
-              <h2 className="panel-title">If it does not works for you ! try our Advanced Waterfall Enrichment</h2>
+              <h2 className="panel-title">
+                If it does not works for you ! try our Advanced Waterfall
+                Enrichment
+              </h2>
 
               <a href="#" className="panel-link">
                 Try Our Advanced Waterfall Enrichment →
@@ -236,14 +245,20 @@ export default function CRMDataEnrichment() {
                   <div className="mock-image">CRM Contact</div>
                 </div>
               </div>
-              <a href="#" className="panel-link">Try LeadCRM Data Sync →</a>
+              <a href="#" className="panel-link">
+                Try LeadCRM Data Sync →
+              </a>
             </div>
 
             <div className="sync-card">
               <h3>Unlock instant CRM insights</h3>
-              <p className="muted">See CRM context for every profile you visit.</p>
+              <p className="muted">
+                See CRM context for every profile you visit.
+              </p>
               <div className="mock-image wide">Data Overlay Preview</div>
-              <a href="#" className="panel-link">Try LeadCRM Data Overlay →</a>
+              <a href="#" className="panel-link">
+                Try LeadCRM Data Overlay →
+              </a>
             </div>
           </div>
         </div>
@@ -260,16 +275,22 @@ export default function CRMDataEnrichment() {
           <div className="export-grid">
             <div className="export-card">
               <h3>Enrich & Export 250 Profiles in Just 60 Seconds.</h3>
-              <p className="muted">Upload CSV or bulk export to HubSpot / G-Sheet.</p>
+              <p className="muted">
+                Upload CSV or bulk export to HubSpot / G-Sheet.
+              </p>
               <div className="mock-image">Sales Navigator Export</div>
-              <a href="#" className="panel-link">Try LeadCRM Bulk Export →</a>
+              <a href="#" className="panel-link">
+                Try LeadCRM Bulk Export →
+              </a>
             </div>
 
             <div className="export-card">
               <h3>Export & enrich profiles to the CRM or G-Sheet</h3>
               <p className="muted">Fast mapping and field sync.</p>
               <div className="mock-image wide">Excel Preview</div>
-              <a href="#" className="panel-link">Try LeadCRM Bulk Export →</a>
+              <a href="#" className="panel-link">
+                Try LeadCRM Bulk Export →
+              </a>
             </div>
           </div>
         </div>

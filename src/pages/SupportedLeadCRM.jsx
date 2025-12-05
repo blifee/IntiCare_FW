@@ -1,7 +1,6 @@
 import React from "react";
 import "./SupportedLeadCRM.css";
-
-// Import the image so it works after build
+//image import
 import LdcrmImg from "../images/ldcrm.png";
 
 export default function SupportedLeadCRM() {

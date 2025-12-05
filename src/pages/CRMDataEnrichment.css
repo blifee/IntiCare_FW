@@ -1,5 +1,4 @@
-
-/* ---------- ROOT / GLOBAL ---------- */
+/* //for globall */
 :root{
   --bg:#f8f9fb;
   --panel-bg:#f0f4ff;
@@ -275,7 +274,7 @@ body,html{margin:0;padding:0;background:var(--bg);font-family:-apple-system,Blin
 /* Mobile Responsive */
 @media (max-width: 480px) {
   .cards-row {
-    flex-direction: column;   /* stacked on mobile */
+    flex-direction: column;   
     gap: 20px;
   }
 

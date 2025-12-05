@@ -25,14 +25,14 @@
 
 .feature-item p span {
   font-weight: 600;
-  color: #0b0f40; /* dark blue text like reference */
+  color: #0b0f40;
 }
 
 /* dotted vertical divider */
 .divider {
   width: 2px;
   height: 60px;
-  border-right: 2px dotted #4ea1ff; /* same light-blue dotted line */
+  border-right: 2px dotted #4ea1ff; 
 }
 /* // */
 .features-slider {
@@ -43,9 +43,9 @@
 }
 
 .slider-track {
-  display: inline-flex;       /* Important for infinite scroll */
+  display: inline-flex;     
   gap: 60px;
-  min-width: max-content;     /* Track will expand automatically */
+  min-width: max-content;     
   animation: scroll-left 15s linear infinite;
 }
 

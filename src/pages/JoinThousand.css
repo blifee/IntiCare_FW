@@ -21,7 +21,7 @@
   background: #065D7D;
   color: white;
 
-  background-image: url('/src/images/bg-pattern.png'); /* OPTIONAL */
+  background-image: url('/src/images/bg-pattern.png'); 
   background-size: cover;
   background-position: center;
 }

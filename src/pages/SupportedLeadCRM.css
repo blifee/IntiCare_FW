@@ -174,16 +174,16 @@
 }
 /* /////////////// */
 .image-container {
-  width: 100%;           /* or a fixed width like 400px, depending on your layout */
-  max-width: 1500px;      /* optional max width */
-  height: 590px;         /* fixed height */
-  overflow: hidden;      /* hide any image parts going outside */
+  width: 100%;          
+  max-width: 1500px;   
+  height: 590px;         
+  overflow: hidden;     
 }
 
 .fixed-image {
-  width: 100%;           /* stretch image to full container width */
-  height: 100%;          /* stretch image to full container height */
-  object-fit: cover;     /* ensures image fills container, maintains aspect ratio, crops if needed */  /* :contentReference[oaicite:0]{index=0} */
-  object-position: center;  /* center the image content when cropping happens */  /* :contentReference[oaicite:1]{index=1} */
-  display: block;        /* optional — avoids inline spacing / whitespace issues for <img> */  
+  width: 100%;           
+  height: 100%;          
+  object-fit: cover;     
+  object-position: center; 
+  display: block;       
 }
