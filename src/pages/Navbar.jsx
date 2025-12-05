@@ -21,11 +21,7 @@ export default function Navbar() {
 
       {/* Left Logo */}
       <div className="nav-left">
-       <img
-  src="\src\images\Logo.png"
-  className="logo"
-  alt=""
-/>
+       <img src={Logo} className="logo" alt="logo" />
 
         <span className="brand-text">
             <img src="" alt="" />
