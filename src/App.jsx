@@ -3,12 +3,13 @@ import Navbar from "./pages/Navbar";
 import HeroSection from "./pages/HeroSection";
 import ScrollFeature from "./pages/ScrollFeature";
 import LeadCRMSection from "./pages/LeadCRMSection";
-import HowItWorks from "./pages/HowItWorks";
+// import HowItWorks from "./pages/HowItWork";
 import Testimonials from "./pages/Testimonials";
 import CRMDataEnrichment from "./pages/CRMDataEnrichment";
 import SupportedLeadCRM from "./pages/SupportedLeadCRM";
 import JoinThousand from "./pages/JoinThousand";
 import Footer from "./component/Footer";
+import HowItWork from "./pages/HowItWork";
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
       <HeroSection />/
       <ScrollFeature />
       <LeadCRMSection />
-      <HowItWorks />
+      <HowItWork/>
       <Testimonials />
       <CRMDataEnrichment/>
       <SupportedLeadCRM/>

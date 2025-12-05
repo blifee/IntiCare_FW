@@ -1,7 +1,7 @@
 import React from "react";
-import "./HowItWorks.css";
+import "./HowItWork.css";
 
-export default function HowItWorks() {
+export default function HowItWork() {
   const steps = [
     {
       number: "1",
