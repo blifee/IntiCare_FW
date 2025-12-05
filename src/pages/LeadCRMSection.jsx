@@ -1,5 +1,14 @@
 import "./LeadCRMSection.css";
 
+// IMPORT IMAGES
+import LDImg from "../images/ld.png";
+import CRMImg from "../images/crm.png";
+import Icon1 from "../images/1.png";
+import Icon2 from "../images/2.png";
+import Icon3 from "../images/3.png";
+import Icon4 from "../images/4.png";
+import ArrowImg from "../images/arara.png";
+
 export default function LeadCRMSection() {
   return (
     <div className="leadcrm-wrapper">
@@ -12,7 +21,7 @@ export default function LeadCRMSection() {
 
         {/* LEFT BOX */}
         <div className="card left-card">
-          <img src="/src/images/ld.png" className="card-img" />
+          <img src={LDImg} className="card-img" alt="Without LeadCRM" />
 
           <h3 className="card-title-red">Without LeadCRM</h3>
 
@@ -55,7 +64,7 @@ export default function LeadCRMSection() {
 
         {/* RIGHT BOX */}
         <div className="card right-card">
-          <img src="/src/images/crm.png" className="card-img" />
+          <img src={CRMImg} className="card-img" alt="With LeadCRM" />
 
           <h3 className="card-title-green">
             With LeadCRM <span className="green-tag">4+ Hours/day Saved</span>
@@ -63,25 +72,25 @@ export default function LeadCRMSection() {
 
           <ul className="card-list">
             <li>
-              <img src="/src/images/1.png" className="icon" />
+              <img src={Icon1} className="icon" alt="" />
               Complete Bi-Directional Sync  
             </li>
             <p>Automatically sync contacts, messages, and notes between LinkedIn and your CRM in real time.</p>
 
             <li>
-              <img src="/src/images/2.png" className="icon" />
+              <img src={Icon2} className="icon" alt="" />
               700M+ Contacts + Enrichment
             </li>
             <p>Get verified emails and phone numbers from a vast global database.</p>
 
             <li>
-              <img src="/src/images/3.png" className="icon" />
+              <img src={Icon3} className="icon" alt="" />
               CRM Overlay on LinkedIn
             </li>
             <p>See full CRM insights directly on LinkedIn profiles without switching tabs.</p>
 
             <li>
-              <img src="/src/images/4.png" className="icon" />
+              <img src={Icon4} className="icon" alt="" />
               AI Response + Templates + Bulk Exports
             </li>
             <p>Save time with AI-crafted replies, pre-built templates, and one-click data exports.</p>
@@ -93,7 +102,7 @@ export default function LeadCRMSection() {
       {/* CTA */}
       <div className="cta-box">
         <button className="cta-btn">Start Using LeadCRM Now</button>
-        <img className="arrow" src="/src/images/arara.png" alt="" />
+        <img className="arrow" src={ArrowImg} alt="Arrow" />
       </div>
     </div>
   );

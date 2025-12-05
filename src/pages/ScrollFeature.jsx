@@ -1,52 +1,32 @@
-import "../pages/ScrollFeature.css"; 
+import "../pages/ScrollFeature.css";
+
+// IMPORT IMAGES
+import ContactImg from "../images/contact.png";
+import HAImg from "../images/ha.png";
+import ADImg from "../images/ad.png";
+import WFImg from "../images/wf.png";
+
 export default function ScrollFeature() {
+  const features = [
+    { icon: ContactImg, text: <>Access to <span>700M+ Contacts</span></> },
+    { icon: HAImg, text: <><span>One click push</span> to CRM</> },
+    { icon: ADImg, text: <><span>Custom Field</span> Mapping</> },
+    { icon: WFImg, text: <>Advanced <span>Waterfall Enrichment</span></> },
+  ];
+
+  // duplicate array for infinite scroll
+  const loopedFeatures = [...features, ...features];
+
   return (
     <div className="features-slider">
-  <div className="slider-track">
-
-    <div className="feature-item">
-      <img src="\src\images\contact.png" className="feature-icon" />
-      <p>Access to <span>700M+ Contacts</span></p>
+      <div className="slider-track">
+        {loopedFeatures.map((feature, index) => (
+          <div className="feature-item" key={index}>
+            <img src={feature.icon} className="feature-icon" alt="" />
+            <p>{feature.text}</p>
+          </div>
+        ))}
+      </div>
     </div>
-
-    <div className="feature-item">
-      <img src="\src\images\ha.png" className="feature-icon" />
-      <p><span>One click push</span> to CRM</p>
-    </div>
-
-    <div className="feature-item">
-      <img src="\src\images\ad.png" className="feature-icon" />
-      <p><span>Custom Field</span> Mapping</p>
-    </div>
-
-    <div className="feature-item">
-      <img src="\src\images\wf.png" className="feature-icon" />
-      <p>Advanced <span>Waterfall Enrichment</span></p>
-    </div>
-
-    {/* duplicate items for infinite loop */}
-    <div className="feature-item">
-      <img src="\src\images\contact.png" className="feature-icon" />
-      <p>Access to <span>700M+ Contacts</span></p>
-    </div>
-
-    <div className="feature-item">
-      <img src="\src\images\ha.png" className="feature-icon" />
-      <p><span>One click push</span> to CRM</p>
-    </div>
-
-    <div className="feature-item">
-      <img src="\src\images\ad.png" className="feature-icon" />
-      <p><span>Custom Field</span> Mapping</p>
-    </div>
-
-    <div className="feature-item">
-      <img src="\src\images\wf.png" className="feature-icon" />
-      <p>Advanced <span>Waterfall Enrichment</span></p>
-    </div>
-
-  </div>
-</div>
-
   );
 }
