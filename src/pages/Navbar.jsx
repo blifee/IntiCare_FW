@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Menu, X, ChevronDown, LogIn } from "lucide-react";
+import Logo from "../images/Logo.png";
 
 export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -20,11 +21,12 @@ export default function Navbar() {
 
       {/* Left Logo */}
       <div className="nav-left">
-        <img
-          src="\src\images\Logo.png"
-          className="logo"
-          alt=""
-        />
+       <img
+  src="\src\images\Logo.png"
+  className="logo"
+  alt=""
+/>
+
         <span className="brand-text">
             <img src="" alt="" />
         </span>
